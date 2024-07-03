@@ -33,3 +33,8 @@ cd st4ts
 ```bash
 pip3 install streamlit
 ```
+
+### 3. Run
+```bash
+streamlit run main.py
+```
