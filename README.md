@@ -27,3 +27,9 @@ Clone repositori ini ke mesin lokal Anda menggunakan perintah berikut:
 ```bash
 git clone https://github.com/username/st4ts.git
 cd st4ts
+```
+
+### 2. Install streamlit
+```bash
+pip3 install streamlit
+```
