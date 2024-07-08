@@ -144,7 +144,7 @@ def main():
             data = [int(x) for x in data]
             if st.button("Hitung"):
                 hasil = jangkauan(data)
-                st.success(hasil)
+                st.success(f"Range nya adalah {hasil}")
 
         case "Kuartil":
             st.markdown("<h1>Kuartil</h1>", unsafe_allow_html=True)
@@ -158,7 +158,7 @@ def main():
 
                     if st.button("Hitung"):
                         hasil = kuartil(data)
-                        st.success(hasil[0])
+                        st.success(f"Kuartil 1 nya adalah = {hasil[0]}")
 
                 case "Kuartil 2":
                     st.markdown("<h1>Kuartil 2 (Median)</h1>", unsafe_allow_html=True)
@@ -167,7 +167,7 @@ def main():
 
                     if st.button("Hitung"):
                         hasil = kuartil(data)
-                        st.success(hasil[1])
+                        st.success(f"Kuartil 2 nya adalah = {hasil[1]}")
 
                 case "Kuartil 3":
                     st.markdown("<h1>Kuartil 3 (Atas)</h1>", unsafe_allow_html=True)
@@ -176,7 +176,7 @@ def main():
 
                     if st.button("Hitung"):
                         hasil = kuartil(data)
-                        st.success(hasil[2])
+                        st.success(f"Kuartil 3 nya adalah = {hasil[2]}")
 
                 case "Jangkauan Semi Interkuartil":
                     st.markdown("<h1>Jangkauan Semi Interkuartil (Simpangan Kuartil)</h1>", unsafe_allow_html=True)
@@ -185,7 +185,7 @@ def main():
 
                     if st.button("Hitung"):
                         hasil = kuartil(data)
-                        st.success(hasil[4])
+                        st.success(f"Simpangan kuartil nya adalah = {hasil[4]}")
 
                 case "Jangkauan Interkuartil":
                     st.markdown("<h1>Jangkauan Interkuartil (Hamparan Kuartil)</h1>", unsafe_allow_html=True)
@@ -194,7 +194,7 @@ def main():
 
                     if st.button("Hitung"):
                         hasil = kuartil(data)
-                        st.success(hasil[3])
+                        st.success(f"Jangkauan interkuartil nya adalah = {hasil[3]}")
 
 if __name__ == "__main__":
     main()
