@@ -1,2 +1,2 @@
-streamlit==1.20.0
-streamlit-navigation-bar==3.3.0 
+streamlit
+streamlit-navigation-bar
